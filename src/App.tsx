@@ -1,10 +1,13 @@
 import { RouterProvider } from 'react-router-dom'
 import router from './utils/router'
+import { FeedbackSubmissionsContextProvider } from './utils/feedback-submissions-context'
 
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <FeedbackSubmissionsContextProvider>
+      <RouterProvider router={router} />
+    </FeedbackSubmissionsContextProvider>
   )
 }
 
