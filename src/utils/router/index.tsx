@@ -1,9 +1,10 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
+import FormPage from '../../pages/FormPage';
 
 export const paths = [
   {
     path: '/',
-    element: <div>Feedback form page</div>,
+    element: <FormPage />,
   },
   {
     path: '/results',
