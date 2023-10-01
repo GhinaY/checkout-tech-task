@@ -1,8 +1,4 @@
-import { FeedbackSubmission } from '../../types'
-
-export type RatingsDistribution = {
-  [key: number]: number,
-}
+import { FeedbackSubmission, RatingsDistribution } from '../../types'
 
 export type FeedbackSubmissionsContextType = {
   addNewSubmission: (newSubmission: FeedbackSubmission) => void,

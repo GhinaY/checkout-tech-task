@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
-import { FeedbackSubmission } from '../../types';
-import { FeedbackSubmissionsContextType, RatingsDistribution } from './types';
+import { FeedbackSubmission, RatingsDistribution } from '../../types';
+import { FeedbackSubmissionsContextType } from './types';
 
 export const FeedbackSubmissionsContext = createContext<FeedbackSubmissionsContextType>(null!);
 

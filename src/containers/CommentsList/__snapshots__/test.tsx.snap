@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CommentList > Matches screenshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiStack-root css-1sazv7p-MuiStack-root"
+  >
+    <div>
+      test comment
+    </div>
+    <hr
+      class="MuiDivider-root MuiDivider-middle css-ft4jij-MuiDivider-root"
+    />
+    <div>
+      test comment
+    </div>
+    <hr
+      class="MuiDivider-root MuiDivider-middle css-ft4jij-MuiDivider-root"
+    />
+    <div>
+      test comment
+    </div>
+  </div>
+</DocumentFragment>
+`;

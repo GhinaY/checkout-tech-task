@@ -1,9 +1,10 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useContext } from 'react'
 import { fireEvent, render, screen } from '@testing-library/react'
+import { FeedbackSubmission } from '../../types'
 import { FeedbackSubmissionsContext, FeedbackSubmissionsContextProvider } from './index'
 
-const mockSubmission = {
+const mockSubmission: FeedbackSubmission = {
   name: 'test name',
   email: 'test@test.com',
   rating: 5,
@@ -77,8 +78,12 @@ describe('FeedbackSubmissionsContextProvider', () => {
       const initialListLengthText = screen.getByText(
         /Number of submissions: 0/i
       );
+      const initialListValueText = screen.queryByText(
+        /test@test.com: test comment/i
+      );
 
       expect(initialListLengthText.textContent).toBeTruthy()
+      expect(initialListValueText).toBeFalsy()
 
       fireEvent.click(screen.getByText(/Add new submission/i));
 

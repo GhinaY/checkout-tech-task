@@ -1,5 +1,6 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import FormPage from '../../pages/FormPage';
+import ResultsPage from '../../pages/ResultsPage';
 
 export const paths = [
   {
@@ -8,7 +9,7 @@ export const paths = [
   },
   {
     path: '/results',
-    element: <div>Feedback results page</div>,
+    element: <ResultsPage />,
   },
   { 
     path: '*', 

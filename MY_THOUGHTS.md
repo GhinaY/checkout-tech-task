@@ -14,3 +14,8 @@ I've also added a separate state to keep count of the ratings distribution. This
 For this part, I chose to use 2 third party libraries because they significantly simplify the work and logic. The two libraries are Material UI and react-hook-form. I'm using MUI for all the components so I don't have to spend time styling them myself and adding accessibility features and such, and react-hook-form to handle the validation with minimal setup requirements.
 In terms of the page/form layout, I used nested Stacks (basically flex-boxes) with additional rules to make them responsive (e.g. comment field moves below the other fields on smaller screens). 
 Because a lot of the logic around updating the data was already done in the context, the only logic that needs to live in the form is the validation, so there isn't really much more to it than that.
+
+### Commit 5: Setting up the results page
+This was probably one of the easiest parts: all the heavy lifting and the infrastructure was already done, and all that was left to do was use the data we already have and make it pretty. 
+For the charting, I went with the Recharts library as it's very lightweight and simple, perfect for this applications minimal requirements.
+I decided to create the comments list and the chart parts as 'containers' instead of having the logic in the ResultsPage component for the sake of separation of concerns. This makes them more easily testable and makes the code more reusable, if we ever wanted to expand on this app. 

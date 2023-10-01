@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RatingsChart > Matches screenshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1t6y9n7-MuiPaper-root-MuiCard-root"
+  >
+    <div>
+      <div>
+        BarChart component
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
